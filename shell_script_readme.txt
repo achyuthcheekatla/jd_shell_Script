@@ -25,7 +25,9 @@ git remote add origin https://github.com/achyuthcheekatla/jd_shell_Script.git
 git push -u origin main
 
 
-git add odd_even_numbers.sh ; git commit -m "odd_even.sh file commit"
+git add odd_even_numbers.sh ; git commit -m "updated odd_even.sh file commit" ; git push origin main;
+
+git pull
 
 
 Create an ec2 instance 
@@ -36,4 +38,5 @@ aws ec2 run-instances \
     --security-group-ids sg-043444d172056acbd \
     --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=roboshop-mongodb}]'
 
-
+Assignments needs to be completed
+shell-scripting.md  
