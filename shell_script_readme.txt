@@ -40,3 +40,12 @@ aws ec2 run-instances \
 
 Assignments needs to be completed
 shell-scripting.md  
+
+Assignment1
+
+Hello, World!
+Today is: Fri May 23 10:30:00 IST 2026
+Running as: ec2-user
+Current directory: /home/ec2-user/scripts
+
+
