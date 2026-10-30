@@ -5,7 +5,7 @@ shell Scripting Learnings
 github repo created jd_shell_Scripting
 
 
-# one-time setup, per machine (or per repo with the file flag removed)
+one-time setup, per machine (or per repo with the file flag removed)
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
@@ -51,18 +51,7 @@ Hello, World!
 Today is: Fri May 23 10:30:00 IST 2026
 Running as: ec2-user
 Current directory: /home/ec2-user/scripts
----------------------------------------------------------
-#!/bin/bash
 
-echo "Hello, World!"
-echo "Today is: " $(date)
-echo "Running as: " $(whoami)
-echo "Current directory: " $(pwd)
----------------------------------------------
-Hello, World!
-Today is:  Fri Oct 30 20:03:24 UTC 2026
-Running as:  ec2-user
-Current directory:  /home/ec2-user/learn_shell/jd_shell_Script
 
 ======================================================================
 
@@ -78,21 +67,7 @@ Expected output:
 
 My name is Siva, I am 28 years old and I live in Hyderabad.
 Years until 60: 32
------------------------------------------
-#!/bin/bash
 
-name=Siva
-age=28
-city=Hyderabad
-#attheage=60
-years=$((60-$age))
-
-echo "My name is $name, I am $age years old and I live in $city."
-echo "Years until 60: " $years
-
-$ sh 02-variables.sh
-My name is Siva, I am 28 years old and I live in Hyderabad.
-Years until 60:  32
 ==================================================================
 
 Assignment 3 — Command Line Arguments
@@ -110,18 +85,7 @@ User Siva is from India
 Number of arguments: 2
 All arguments: Siva India
 Script name: 03-args.sh
-----------------------------------
-username=$1
-country=$2
-echo "User $1 is from $2"
-echo "Number of arguments: " $#
-echo "All arguments: " $*
-echo "Script name: " $0
 
-$ sh 03-args.sh Siva India
-User Siva is from India
-Number of arguments:  2
-All arguments:  Siva India
-Script name:  03-args.sh
+
 ======================================================================
 
