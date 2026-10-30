@@ -38,6 +38,7 @@ aws ec2 run-instances \
     --security-group-ids sg-043444d172056acbd \
     --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=roboshop-mongodb}]'
 
+======================================================================
 Assignments needs to be completed
 shell-scripting.md  
 
@@ -47,5 +48,48 @@ Hello, World!
 Today is: Fri May 23 10:30:00 IST 2026
 Running as: ec2-user
 Current directory: /home/ec2-user/scripts
+---------------------------------------------------------
+#!/bin/bash
+
+echo "Hello, World!"
+echo "Today is: " $(date)
+echo "Running as: " $(whoami)
+echo "Current directory: " $(pwd)
+---------------------------------------------
+Hello, World!
+Today is:  Fri Oct 30 20:03:24 UTC 2026
+Running as:  ec2-user
+Current directory:  /home/ec2-user/learn_shell/jd_shell_Script
+
+======================================================================
+
+Assignment2
+
+Write a script 02-variables.sh that:
+
+Store your name, age, and city in variables
+Print a sentence using all three variables
+Calculate and print how many years until you turn 60
+Change the name variable to a different name and verify only one line needs to change
+Expected output:
+
+My name is Siva, I am 28 years old and I live in Hyderabad.
+Years until 60: 32
+-----------------------------------------
+#!/bin/bash
+
+name=Siva
+age=28
+city=Hyderabad
+#attheage=60
+years=$((60-$age))
+
+echo "My name is $name, I am $age years old and I live in $city."
+echo "Years until 60: " $years
+
+$ sh 02-variables.sh
+My name is Siva, I am 28 years old and I live in Hyderabad.
+Years until 60:  32
+
 
 
