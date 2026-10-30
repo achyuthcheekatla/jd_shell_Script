@@ -41,6 +41,7 @@ aws ec2 run-instances \
 ======================================================================
 Assignments needs to be completed
 shell-scripting.md  
+https://github.com/daws-92s/assignments/blob/main/shell-scripting.md
 
 Assignment1
 
@@ -90,6 +91,37 @@ echo "Years until 60: " $years
 $ sh 02-variables.sh
 My name is Siva, I am 28 years old and I live in Hyderabad.
 Years until 60:  32
+==================================================================
+
+Assignment 3 — Command Line Arguments
+Write a script 03-args.sh that accepts two arguments: a username and a country.
+
+Print: User <username> is from <country>
+Print total number of arguments passed
+Print all arguments passed
+Print the script name
+
+Run it as: sh 03-args.sh Siva India
+-------------------
+Expected output:
+User Siva is from India
+Number of arguments: 2
+All arguments: Siva India
+Script name: 03-args.sh
+----------------------------------
+username=$1
+country=$2
+echo "User $1 is from $2"
+echo "Number of arguments: " $#
+echo "All arguments: " $*
+echo "Script name: " $0
+
+$ sh 03-args.sh Siva India
+User Siva is from India
+Number of arguments:  2
+All arguments:  Siva India
+Script name:  03-args.sh
+======================================================================
 
 
 
