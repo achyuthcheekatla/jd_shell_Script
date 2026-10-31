@@ -26,9 +26,7 @@ git push -u origin main
 
 
 git add odd_even_numbers.sh ; git commit -m "updated odd_even.sh file commit" ; git push origin main;
-
-git pull
-
+-------------------------
 
 Create an ec2 instance 
 
@@ -37,6 +35,13 @@ aws ec2 run-instances \
     --instance-type t3.micro \
     --security-group-ids sg-043444d172056acbd \
     --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=roboshop-mongodb}]'
+	
+	
+mkdir learn in ec2 instance
+
+git clone url
+
+git pull
 
 ======================================================================
 Assignments needs to be completed
