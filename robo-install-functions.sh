@@ -20,11 +20,11 @@ validate(){
     fi
 }
 
-dnf install nginx -y
+dnf install nginxxx -y
 validate 
 echo "I am at nginx validate function "
 
-dnf install mysql -y
+dnf install mysqlll -y
 validate
 echo "I am at nginx validate function "
 
