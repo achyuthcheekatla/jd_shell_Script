@@ -19,7 +19,7 @@ else
     echo "Nginx is installed successfully"
 fi
 
-dnf install mysqll -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]; then  # $? is checking the above cmd Exit code is 0 or 1 , 0 is success
     echo "mysql client is failed to install"
