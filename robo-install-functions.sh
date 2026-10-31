@@ -12,8 +12,8 @@ fi
 
 #Function validate is used 
 validate(){
-    if [ $? -ne 0 ]; then  # $? is checking the above cmd Exit code is 0 or 1 , 0 is success
-        echo "Nginx is failed to install"
+    if [ $1 -ne 0 ]; then  # $? is checking the above cmd Exit code is 0 or 1 , 0 is success
+        echo "${2} is failed to install"
         exit 1
     else
         echo "Nginx is installed successfully"
@@ -21,11 +21,11 @@ validate(){
 }
 
 dnf install nginxxx -y
-validate 
+validate $? "Nignx Validation"
 echo "I am at nginx validate function "
 
 dnf install mysqlll -y
-validate
+validate $? "mysql Validation"
 echo "I am at nginx validate function "
 
 echo "Script Execution Completed"
