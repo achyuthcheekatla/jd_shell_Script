@@ -43,6 +43,11 @@ git clone url
 
 git pull
 
+
+/var/log/shell_script_practice
+
+
+
 ======================================================================
 Assignments needs to be completed
 shell-scripting.md  
