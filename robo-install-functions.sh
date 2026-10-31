@@ -16,7 +16,7 @@ validate(){
         echo "${2} is failed to install"
         exit 1
     else
-        echo "Nginx is installed successfully"
+        echo "${2} is installed successfully"
     fi
 }
 
