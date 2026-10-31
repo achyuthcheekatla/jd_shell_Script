@@ -26,6 +26,6 @@ echo "I am at nginx validate function "
 
 dnf install mysql -y
 validate $? "mysql"
-echo "I am at nginx validate function "
+echo "I am at mysql validate function "
 
 echo "Script Execution Completed"
