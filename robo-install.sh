@@ -17,5 +17,5 @@ if [ $? -ne 0 ]; then  # $? is checking the above cmd Exit code is 0 or 1 , 0 is
     exit 1
 else
     echo "Nginx is installed successfully"
-
+fi
 echo "Script Execution Completed"
