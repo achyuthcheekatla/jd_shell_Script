@@ -10,7 +10,7 @@ else
     echo "executed with sudo userid is  $user_id"
 fi
 
-dnf install nginx -y
+dnf install nginxxx -y
 
 if [ $? -ne 0 ]; then  # $? is checking the above cmd Exit code is 0 or 1 , 0 is success
     echo "Nginx is failed to install"
