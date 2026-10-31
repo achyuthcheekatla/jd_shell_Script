@@ -12,7 +12,7 @@ else
     echo "executed with sudo userid is  $user_id"
 fi
 
-echo "Script started at ${date +"%F %T"}"
+echo "Script started at $(date +"%F %T")"
 
 mkdir -p $logs_folder   # -p if folder is not there then it will create the folder
 
@@ -34,4 +34,4 @@ dnf install mysql -y &>> $logs_file
 validate $? "mysql"
 echo "I am at mysql validate function "
 
-echo "Script completed at ${date +"%F %T"}"
+echo "Script completed at $(date +"%F %T")"
