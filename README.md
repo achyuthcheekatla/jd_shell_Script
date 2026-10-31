@@ -86,6 +86,5 @@ Number of arguments: 2
 All arguments: Siva India
 Script name: 03-args.sh
 
-
 ======================================================================
 
