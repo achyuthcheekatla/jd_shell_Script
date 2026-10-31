@@ -5,14 +5,14 @@ user_id=$(id -u)
 logs_folder="/var/log/shell_script_practice"
 logs_file="{logs_folder}/${0}.log"
 
-echo "Script started at ${date +"%F %T"}"
-
 if [ $user_id -ne 0 ]; then
     echo "please execute with sudo access"
     exit 1
 else 
     echo "executed with sudo userid is  $user_id"
 fi
+
+echo "Script started at ${date +"%F %T"}"
 
 mkdir -p $logs_folder   # -p if folder is not there then it will create the folder
 
