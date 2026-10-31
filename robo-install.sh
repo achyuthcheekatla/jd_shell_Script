@@ -8,4 +8,7 @@ if [ $user_id -ne 0 ]; then
 else 
     echo "executed with sudo userid is  $user_id"
 fi
+
+dnf install nginx -y
+
 echo "Exit"
