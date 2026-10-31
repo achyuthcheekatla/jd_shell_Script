@@ -28,7 +28,14 @@ validate(){
 
 for pckg in $@    # here $@ is passing the argumented values while execution of script
 do
-    echo "install ${pckg}"
-    dnf install ${pckg} -y &>> $logs_file
-    validate $? "installing ${pckg}"
+    dnf list installed {pckg}
+    if [ $? -ne 0 ]; then
+        echo "install ${pckg}"
+        dnf install ${pckg} -y &>> $logs_file
+        validate $? "installing ${pckg}"
+    else 
+        echo "${pckg} is already installed... SKIPPING"
+    fi
 done
+
+echo "Script completed at $(date +"%F %T")"
