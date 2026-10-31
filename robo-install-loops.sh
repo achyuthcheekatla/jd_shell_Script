@@ -28,7 +28,7 @@ validate(){
 
 for pckg in $@    # here $@ is passing the argumented values while execution of script
 do
-    dnf list installed {pckg}
+    dnf list installed ${pckg}
     if [ $? -ne 0 ]; then
         echo "install ${pckg}"
         dnf install ${pckg} -y &>> $logs_file
